@@ -1,0 +1,9 @@
+ .container{
+  background: transparent;
+height: autox;
+
+ 
+} 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
