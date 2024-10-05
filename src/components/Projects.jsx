@@ -6,8 +6,10 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useTexture } from "@react-three/drei";
 import * as THREE from 'three';
 import 'swiper/css';
+import { FaGithub } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 
-// Project data
+
 const projects = [
   {
     num: '01',
@@ -15,6 +17,7 @@ const projects = [
     title: 'Project1',
     description: 'HTML 5, CSS 3, Javascript, Node Js, MongoDB, Express',
     stack: [{ name: "Full stack project without React" }],
+    about:'sans',
     image: '/images/bo.webp',
   },
   {
@@ -86,6 +89,10 @@ const Projects = () => {
               </ul>
               {/* Border */}
               <div className="border border-white/20 my-4"></div>
+               <FaGithub className="w-26 h-26" />
+                <FaLink className="w-26 h-26"/>
+               <p className="">{project.about}</p>
+
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
